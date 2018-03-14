@@ -1,0 +1,32 @@
+<% include partials/header %>
+
+<table style="width:60%">
+   <tr>
+        <th>Motor Number</th>
+        <th>Motor Health</th> 
+        <th>Fix Issues</th>
+    </tr>
+    <% motors.forEach(function(motor){ %>
+        <tr>
+            <td>
+                <%= motor.name %>
+            </td>
+            <td>
+                <% if(motor.currentSpeed<=10) { %>
+                <div class="green"></div>
+                <% } else { %>
+                <div class="red"></div>
+                <% } %>
+            </td>
+            <td>
+                <div class="fix">
+                    <form name="myForm" action="/health/<%= motor._id %>" method="post">
+                    	<button type="submit">Fix the motor</button>
+                    </form>
+                </fix>
+            </td>
+        </tr>
+    <% }); %>
+</table>
+
+<% include partials/footer %>

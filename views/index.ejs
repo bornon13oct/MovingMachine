@@ -1,0 +1,48 @@
+<% include partials/header %>
+
+<table style="width:60%">
+   <tr>
+        <th>Motor Number</th>
+        <th>Turn On Switch</th> 
+        <th>Turn Off Switch</th>
+        <th>Current Speed</th>
+        <th>Speed Change</th>
+    </tr>
+    <% motors.forEach(function(motor){ %>
+        <tr>
+            <td>
+                <%= motor.name %>
+            </td>
+            <td>
+                <form name="myForm" action="/switch/<%= motor._id %>" method="post">
+                	<button type="submit" class="on">ON</button>
+                </form>
+            </td>
+            <td>
+                <form name="myForm" action="/switch/<%= motor._id %>?_method=PUT" method="post">
+                	<button type="submit" class="off">OFF</button>
+                </form>
+            </td>
+            <td>
+                <div class="speed"><%= motor.currentSpeed %></div>
+            </td>
+            <td>
+                <div class="inl">
+                    <form name="myForm" action="/increase/<%= motor._id %>" method="post" style="display:inline-block; float:left; padding-right:10px;">
+                    	<button type="submit"><i class="fas fa-arrow-up"></i></button>
+                    </form>
+                    <form name="myForm" action="/increase/<%= motor._id %>?_method=PUT" method="post" style="display:inline-block; float:right; padding-left10px;">
+                    	<button type="submit"><i class="fas fa-arrow-down"></i></button>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    <% }); %>
+</table>
+<div class="add">
+    <form name="myForm" action="/" method="post">
+    	<button type="submit">Add a Motor</button>
+    </form>
+</div>
+
+<% include partials/footer %>
