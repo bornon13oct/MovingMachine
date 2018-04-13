@@ -5,8 +5,7 @@ var express         = require("express"),
     methodOverride  = require("method-override");
     
 mongoose.connect(process.env.DATABASE_URL);
-// mongodb://bornon13oct:skay13oct@ds239128.mlab.com:39128/brainworks
-// mongodb://localhost/Motor
+
 var motorSchema = new mongoose.Schema({
     name: String,
     isOn: Boolean,
