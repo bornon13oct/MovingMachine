@@ -11,7 +11,7 @@ increasing or decreasing the speed of each motor. There are two parts (webpages)
 
 This part of the machine is be a simple webpage with the following components:
 
-![image](https://user-images.githubusercontent.com/25412134/38752112-b0a4fd5c-3f77-11e8-8ff7-e80a0746ce5a.png)
+![image](https://user-images.githubusercontent.com/25412134/38756129-06c67d38-3f86-11e8-8a5d-216b02844509.png)
 
 ![image](https://user-images.githubusercontent.com/25412134/38752373-8c46559a-3f78-11e8-99a7-dcabf9d1d7bd.png) 
 
