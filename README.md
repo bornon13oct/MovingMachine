@@ -9,6 +9,8 @@ increasing or decreasing the speed of each motor. There are two parts (webpages)
 
 ## Part 1: One that has the switches and the controls
 
+To see the live demo of this webpage got to : https://rocky-ocean-23308.herokuapp.com/
+
 This part of the machine is be a simple webpage with the following components:
 
 ![image](https://user-images.githubusercontent.com/25412134/38756129-06c67d38-3f86-11e8-8a5d-216b02844509.png)
@@ -54,6 +56,8 @@ the machine starts to record its speed as well every second.
 
 
 ## Part 2: One that displays to us the health of the running machine
+
+To see the live demo of this webpage got to : https://rocky-ocean-23308.herokuapp.com/health
 
 This is a separate page where we get to see the health of our machine. This page gets
 continuously updated with values and machine status, as we switch on/off and control the speed of our
